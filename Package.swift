@@ -12,4 +12,10 @@ import PackageDescription
 
 let package = Package(
     name: "LayoutKit"
+    products: [
+        .library(name: "LayoutKit", targets: ["LayoutKit"])
+    ],
+    targets: [
+        .target(name: "LayoutKit", path: "Sources")
+    ]
 )
